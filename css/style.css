@@ -1,0 +1,59 @@
+﻿/* TAX CALCULATOR */
+body {
+  background-color: #000000ef;
+  font-family: "Poppins", sans-serif;
+}
+#tax_calculator {
+  display: grid;
+  place-items: center;
+  height: 90dvh;
+}
+
+.calculate_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 300px;
+  min-width: 250px;
+  background-color: rgb(254, 254, 253);
+  padding: 1rem;
+  border-radius: 4px;
+}
+#tax_calculator h1 {
+  text-align: center;
+  padding: 1.6rem;
+  background-color: rgb(110, 21, 5);
+  color: #fff;
+  border-radius: 4px;
+}
+.calculate_form input {
+  height: 1.9rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.calculate_form input[type="number"] {
+  padding-left: 0.1rem;
+}
+.calculate_form input[type="submit"],
+.calculate_form input[type="reset"] {
+  width: 90px;
+  height: auto;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.calculate_results {
+  margin: 2rem 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  justify-items: start;
+}
+.tax_results,
+.final_results {
+  justify-self: end;
+}
+.error {
+  color: Crimson;
+  font-size: 0.85rem;
+}

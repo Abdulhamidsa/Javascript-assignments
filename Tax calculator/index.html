@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet">
+    <script src="../js/main.js" defer></script>
+    <title>Tax Calculator</title>
+</head>
+
+<body>
+    <header> <a href="../index.html">Home</a></header>
+    <main id="tax_calculator">
+        <article>
+            <h1>Tax calculator</h1>
+            <form class="calculate_form">
+                <label for="money_amount">Monetary amount</label>
+                <input type="number" id="money_amount" inputmode="numeric"
+                    title="Please enter a numeric value with up to two decimal places">
+                <p class="error"></p>
+                <label for="tax_amount">Tax percentage</label>
+                <input type="text" id="tax_amount" inputmode="numeric"
+                    title="Please enter a numeric value with up to two decimal places">
+                <p class="error"></p>
+                <input type="submit" id="calculate" value="Calculate">
+                <input type="reset" id="reset" value="Reset">
+                <div class="calculate_results">
+                    <span>Tax amount:</span>
+                    <span class="tax_results">0.00</span>
+                    <span>Final amount:</span>
+                    <span class="final_results">0.00</span>
+                </div>
+            </form>
+
+        </article>
+    </main>
+</body>
+
+</html>
