@@ -1,0 +1,10 @@
+﻿:root {
+  --red: #6e1505;
+  --bg-color: #121212;
+  --white: #ffffff;
+  --gray: #888888;
+  --black: #000000;
+  --accent-color: #ff5733;
+
+  --heading: "Poppins", sans-serif;
+}

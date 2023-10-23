@@ -5,27 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/globals.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../Tax-calculator/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Poppins:wght@300;400&display=swap"
-        rel="stylesheet">
+
     <script src="../js/main.js" defer></script>
-    <title>Tax Calculator</title>
+    <title>Tax-calculator</title>
 </head>
 
 <body>
-    <header> <a href="../index.html">Home</a></header>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <div class="menu-items">
+                        <ul>
+                            <li><a href="../index.html"> <img class="logo" src="../media/logo.svg" alt=""></a></li>
+                            <li><a href="../Tax-calculator/index.html">Tax calculator</a></li>
+                            <li><a href="../Temperature-converter/index.html">Temperature converter</a></li>
+                            <li><a href="../Music-CDs/index.html">Music CDs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main id="tax_calculator">
         <article>
-            <h1>Tax calculator</h1>
+            <h1>Tax-calculator</h1>
             <form class="calculate_form">
                 <label for="money_amount">Monetary amount</label>
                 <input type="number" id="money_amount" inputmode="numeric"
                     title="Please enter a numeric value with up to two decimal places">
                 <p class="error"></p>
                 <label for="tax_amount">Tax percentage</label>
-                <input type="text" id="tax_amount" inputmode="numeric"
+                <input type="number" id="tax_amount" inputmode="numeric"
                     title="Please enter a numeric value with up to two decimal places">
                 <p class="error"></p>
                 <input type="submit" id="calculate" value="Calculate">
@@ -37,7 +59,6 @@
                     <span class="final_results">0.00</span>
                 </div>
             </form>
-
         </article>
     </main>
 </body>

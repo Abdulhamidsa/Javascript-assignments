@@ -4,22 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/globals.css">
+
+    <script src="./js/main.js" defer></script>
     <title>Javascript assignments</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="./Tax calculator/index.html">Tax Calculator</a></li>
-                <li><a href="./Temperature converter/index.html">Temperature converter</a></li>
-                <li><a href="./Music CDs/index.html">Music CDs</a></li>
-            </ul>
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <div class="menu-items">
+                        <ul>
+                            <li><a href="./index.html"> <img class="logo" src="./media/logo.svg" alt=""></a></li>
+                            <li><a href="./Tax-calculator/index.html">Tax calculator</a></li>
+                            <li><a href="./Temperature-converter/index.html">Temperature converter</a></li>
+                            <li><a href="./Music-CDs/index.html">Music CDs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
         </nav>
     </header>
+    <main>
+        <img class="bg_image" src="./media/bg-image.jpg" alt="">
+    </main>
 </body>
 
 </html>

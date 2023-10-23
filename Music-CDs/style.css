@@ -1,0 +1,94 @@
+﻿#music_cd h1 {
+  text-align: center;
+  padding: 1.6rem;
+  background-color: var(--red);
+  color: #fff;
+  border-radius: 4px;
+}
+#music_cd {
+  margin-top: 10rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 300px;
+  min-width: 250px;
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+.form [type="submit"] {
+  background: var(--black);
+  border: 1px solid var(--white);
+  box-sizing: border-box;
+  color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.form input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  max-width: 750px;
+  border-collapse: collapse;
+  color: var(--white);
+}
+th,
+td {
+  text-align: left;
+  border: 1px solid var(--white);
+}
+td {
+  padding: 0.5rem;
+  font-size: clamp(13px, 4vw, 17px);
+}
+td:last-child {
+  text-align: center;
+  width: 50px;
+}
+th {
+  background-color: var(--red);
+  padding: 1.2rem;
+  font-size: clamp(16px, 4vw, 20px);
+}
+.deleteButton {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  th,
+  td {
+    padding: 0.3rem;
+  }
+  #music_cd {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -24,6 +24,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 /**
@@ -38,8 +40,6 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-
-
 
 /* Grouping content
    ========================================================================== */
